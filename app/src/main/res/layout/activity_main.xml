@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Here are your Notes"
+        android:fontFamily="@font/fonts"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/titlebg"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_toStartOf="@id/buttonAdd"
+        />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewNotes"
+        android:background="@drawable/roundbutton"
+        android:layout_gravity="right"
+        app:backgroundTint="@color/deepyellow"
+        android:textSize="50sp"
+        android:text="+"/>
+
+
+</LinearLayout>
